@@ -28,7 +28,7 @@ class BaseModel:
                         kwargs["updated_at"], tformat)
                 else:
                     self.__dict__[k] = kwargs[k]
-        else
+        else:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
